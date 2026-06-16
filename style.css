@@ -22,7 +22,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", system-ui, sans-serif;
   color: var(--text);
   background:
     radial-gradient(circle at 18% 10%, rgba(160, 122, 255, .34), transparent 28%),
@@ -962,6 +962,9 @@ h1,
   padding: 12px 0 24px;
   padding-top: max(12px, env(safe-area-inset-top));
   padding-bottom: max(24px, env(safe-area-inset-bottom));
+  font-family: "PingFang SC", "Noto Sans SC", "Source Han Sans SC", system-ui, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
 
 .planner-stage {
@@ -2295,4 +2298,34 @@ h1,
   .codex-egg-card { grid-template-columns: 1fr; }
   .hall-cover { padding: 14px; }
   .hall-action-card { min-height: 108px; }
+}
+
+@media (max-width: 480px) {
+  .planner-hero h1 { font-size: 1.6rem; font-weight: 500; }
+  .planner-hero span { font-weight: 600; }
+  .planner-month-title { font-weight: 600; }
+  .calendar-day strong { font-weight: 600; }
+  .calendar-day.is-today strong { font-weight: 700; }
+  .calendar-weekday { font-weight: 500; }
+  .planner-section-head h2 { font-weight: 700; }
+  .planner-section-head p { font-weight: 400; }
+  .planner-item strong { font-weight: 600; }
+  .planner-item time { font-weight: 600; }
+  .planner-item p { font-size: .72rem; }
+  .planner-title-input { font-size: 1.2rem; font-weight: 700; }
+  .planner-date-bubble span { font-weight: 700; }
+  .planner-detail-card time { font-weight: 700; }
+  .planner-detail-card h2 { font-weight: 700; }
+  .planner-detail-card p { font-size: .82rem; }
+  .planner-detail-label { font-weight: 500; }
+  .planner-editor-topline h2 { font-weight: 700; }
+  .planner-note-input { font-size: .78rem; }
+  .planner-save-btn { font-weight: 600; }
+  .planner-saved-pill { font-weight: 600; }
+  .planner-swipe-action { font-weight: 600; }
+  .planner-day-card time { font-weight: 600; }
+  .planner-day-item strong { font-weight: 600; }
+  .planner-day-item p { font-size: .78rem; }
+  .planner-completed-head strong { font-weight: 700; }
+  .planner-completed-restore { font-weight: 500; }
 }
