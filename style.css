@@ -1206,11 +1206,11 @@ h1,
   height: 26px;
   padding: 0 10px;
   border-radius: 999px;
-  color: #6d7652;
-  background: rgba(231, 239, 206, .94);
-  box-shadow: 0 6px 14px rgba(106, 123, 74, .12);
+  color: #6b8a5a;
+  background: rgba(210, 228, 180, .92);
+  box-shadow: 0 6px 14px rgba(106, 140, 74, .10);
   font-size: .72rem;
-  font-weight: 900;
+  font-weight: 600;
   opacity: 0;
   pointer-events: none;
   transform: translateY(-2px);
@@ -1419,9 +1419,9 @@ h1,
   margin: -6px -4px;
   padding: 4px 8px;
   border-radius: 999px;
-  color: #8b735b;
+  color: #8b9a78;
   font-size: .72rem;
-  font-weight: 800;
+  font-weight: 500;
   white-space: nowrap;
 }
 
@@ -1576,7 +1576,7 @@ h1,
   opacity: 0;
 }
 
-.planner-form button { color: #5a3b12; background: linear-gradient(135deg, #ffe6a7, #ffc45c); }
+.planner-form button { color: #5a7040; background: linear-gradient(135deg, #e8f0d0, #d4e6b0); }
 
 .planner-month-picker:focus,
 .planner-month-picker:focus-visible {
@@ -1649,8 +1649,8 @@ h1,
   height: 28px;
   padding: 0;
   border-radius: 999px;
-  color: #07515a;
-  background: linear-gradient(135deg, #9affec, #c8f7ff);
+  color: #4a8060;
+  background: linear-gradient(135deg, #c8edc0, #dff0d4);
   box-shadow: 0 0 14px rgba(70, 239, 218, .36);
   font-size: 1.08rem;
   line-height: 1;
@@ -1703,8 +1703,8 @@ h1,
 .planner-item-actions button,
 .planner-confirm-delete button {
   padding: 6px 10px;
-  color: #7b5420;
-  background: #fff1ce;
+  color: #6b7a58;
+  background: #e8f0d8;
   box-shadow: none;
   font-size: .74rem;
 }
@@ -1731,7 +1731,7 @@ h1,
 }
 
 .planner-confirm-delete span {
-  color: #9a5a32;
+  color: #a07070;
   font-size: .72rem;
 }
 
@@ -1905,8 +1905,8 @@ h1,
 
 .planner-detail-delete {
   padding: 5px 9px;
-  color: #7b5420;
-  background: #fff1ce;
+  color: #a87070;
+  background: #f5d8d8;
   box-shadow: none;
   font-size: .72rem;
 }
