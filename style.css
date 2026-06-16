@@ -2004,7 +2004,59 @@ h1,
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
     transition-duration: .001ms !important;
-  }
+}
+
+.install-banner {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  padding-top: max(10px, env(safe-area-inset-top));
+  background: rgba(88, 120, 70, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #fff;
+  font-size: .84rem;
+  font-weight: 500;
+  animation: installSlideIn .35s ease;
+}
+.install-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 460px;
+  width: 100%;
+  text-align: center;
+}
+.install-banner-actions {
+  display: flex;
+  gap: 8px;
+}
+.install-banner-btn {
+  padding: 5px 14px;
+  border-radius: 999px;
+  border: none;
+  font-size: .8rem;
+  cursor: pointer;
+}
+.install-banner-primary {
+  background: rgba(255,255,255,0.95);
+  color: #5a7040;
+  font-weight: 600;
+}
+.install-banner-btn:not(.install-banner-primary) {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+}
+@keyframes installSlideIn {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
 }
 
 @media (max-width: 900px) {
