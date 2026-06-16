@@ -2350,31 +2350,34 @@ h1,
 }
 
 @media (max-width: 480px) {
-  .planner-hero h1 { font-size: 1.6rem; font-weight: 500; }
-  .planner-hero span { font-weight: 600; }
-  .planner-month-title { font-weight: 600; }
-  .calendar-day strong { font-weight: 600; }
-  .calendar-day.is-today strong { font-weight: 700; }
-  .calendar-weekday { font-weight: 500; }
-  .planner-section-head h2 { font-weight: 700; }
-  .planner-section-head p { font-weight: 400; }
-  .planner-item strong { font-weight: 600; }
-  .planner-item time { font-weight: 600; }
-  .planner-item p { font-size: .72rem; }
-  .planner-title-input { font-size: 1.2rem; font-weight: 700; }
-  .planner-date-bubble span { font-weight: 700; }
-  .planner-detail-card time { font-weight: 700; }
-  .planner-detail-card h2 { font-weight: 700; }
-  .planner-detail-card p { font-size: .82rem; }
-  .planner-detail-label { font-weight: 500; }
-  .planner-editor-topline h2 { font-weight: 700; }
-  .planner-note-input { font-size: .78rem; }
-  .planner-save-btn { font-weight: 600; }
-  .planner-saved-pill { font-weight: 600; }
-  .planner-swipe-action { font-weight: 600; }
-  .planner-day-card time { font-weight: 600; }
-  .planner-day-item strong { font-weight: 600; }
-  .planner-day-item p { font-size: .78rem; }
-  .planner-completed-head strong { font-weight: 700; }
-  .planner-completed-restore { font-weight: 500; }
+  .planner-hero h1 { font-size: 1.32rem; font-weight: 400; }
+  .planner-hero span { font-weight: 500; font-size: .78rem; }
+  .planner-month-title { font-weight: 500; font-size: 1rem; }
+  .calendar-day strong { font-weight: 400; font-size: .82rem; }
+  .calendar-day.is-today strong { font-weight: 600; }
+  .calendar-weekday { font-weight: 400; font-size: .68rem; }
+  .planner-section-head h2 { font-weight: 600; font-size: .88rem; }
+  .planner-section-head p { font-weight: 300; font-size: .68rem; }
+  .planner-item strong { font-weight: 500; font-size: .82rem; }
+  .planner-item time { font-weight: 400; font-size: .72rem; }
+  .planner-item p { font-size: .66rem; }
+  .planner-title-input { font-size: 1.05rem; font-weight: 500; }
+  .planner-date-bubble span { font-weight: 500; font-size: 1rem; }
+  .planner-detail-card time { font-weight: 500; font-size: .78rem; }
+  .planner-detail-card h2 { font-weight: 500; font-size: 1rem; }
+  .planner-detail-card p { font-size: .76rem; }
+  .planner-detail-label { font-weight: 400; font-size: .72rem; }
+  .planner-editor-topline h2 { font-weight: 500; font-size: .88rem; }
+  .planner-note-input { font-size: .72rem; }
+  .planner-save-btn { font-weight: 500; font-size: .78rem; }
+  .planner-saved-pill { font-weight: 400; font-size: .72rem; }
+  .planner-swipe-action { font-weight: 400; font-size: .68rem; }
+  .planner-day-card time { font-weight: 400; font-size: .82rem; }
+  .planner-day-item strong { font-weight: 500; font-size: .82rem; }
+  .planner-day-item p { font-size: .72rem; }
+  .planner-completed-head strong { font-weight: 600; font-size: .84rem; }
+  .planner-completed-restore { font-weight: 400; }
+  .planner-confirm-delete span { font-size: .66rem; }
+  .planner-close-button { font-size: .68rem; }
+  .planner-detail-delete { font-size: .68rem; }
 }

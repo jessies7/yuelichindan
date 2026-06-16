@@ -1,4 +1,4 @@
-const CACHE = 'yuelichindan-v1';
+const CACHE = 'yuelichindan-v2';
 const ASSETS = [
   './index.html',
   './style.css',

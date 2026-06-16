@@ -1513,7 +1513,7 @@ function bindEvents() {
   }, { passive: true });
   document.querySelector('#contentPanel').addEventListener('pointerdown', (event) => {
     const swipeItem = event.target.closest('.planner-swipe-item');
-    if (!swipeItem || event.pointerType === 'mouse') return;
+    if (!swipeItem) return;
     plannerSwipeTouch = {
       id: swipeItem.dataset.swipeId,
       x: event.clientX,
@@ -1522,14 +1522,14 @@ function bindEvents() {
     };
   });
   document.querySelector('#contentPanel').addEventListener('pointermove', (event) => {
-    if (!plannerSwipeTouch || event.pointerType === 'mouse') return;
+    if (!plannerSwipeTouch) return;
     const deltaX = event.clientX - plannerSwipeTouch.x;
     const deltaY = event.clientY - plannerSwipeTouch.y;
     if (!plannerSwipeTouch.dragging && Math.max(Math.abs(deltaX), Math.abs(deltaY)) > 8) {
       plannerSwipeTouch.dragging = Math.abs(deltaX) > Math.abs(deltaY) * 1.15;
     }
     if (!plannerSwipeTouch.dragging) return;
-    if (deltaX > 42 && plannerSwipeOpenId !== plannerSwipeTouch.id) {
+    if (deltaX > 30 && plannerSwipeOpenId !== plannerSwipeTouch.id) {
       plannerSwipeOpenId = plannerSwipeTouch.id;
       plannerSwipeSuppressClickId = plannerSwipeTouch.id;
       render();
