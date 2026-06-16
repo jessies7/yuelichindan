@@ -960,6 +960,8 @@ h1,
   width: min(100% - 24px, 460px);
   margin: 0 auto;
   padding: 12px 0 24px;
+  padding-top: max(12px, env(safe-area-inset-top));
+  padding-bottom: max(24px, env(safe-area-inset-bottom));
 }
 
 .planner-stage {
