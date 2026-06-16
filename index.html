@@ -54,6 +54,25 @@
         else { alert('请点浏览器菜单(右上角三个点)，然后选择"添加到主屏幕"或"安装应用"'); }
       });
     })();
+    (function() {
+      if (!window.visualViewport) return;
+      var vv = window.visualViewport;
+      function onResize() {
+        document.documentElement.style.height = vv.height + 'px';
+        if (document.activeElement) {
+          document.activeElement.scrollIntoView({ block: 'center', behavior: 'smooth' });
+        }
+      }
+      vv.addEventListener('resize', onResize);
+      vv.addEventListener('scroll', onResize);
+      document.addEventListener('focusin', function(e) {
+        if (e.target.matches('input, textarea, [contenteditable]')) {
+          setTimeout(function() {
+            e.target.scrollIntoView({ block: 'center', behavior: 'smooth' });
+          }, 300);
+        }
+      });
+    })();
   </script>
 </body>
 </html>
