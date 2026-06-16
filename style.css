@@ -22,13 +22,10 @@
 body {
   margin: 0;
   min-height: 100vh;
+  min-height: 100dvh;
   font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", system-ui, sans-serif;
   color: var(--text);
-  background:
-    radial-gradient(circle at 18% 10%, rgba(160, 122, 255, .34), transparent 28%),
-    radial-gradient(circle at 82% 12%, rgba(255, 218, 122, .24), transparent 22%),
-    radial-gradient(circle at 50% 100%, rgba(82, 205, 255, .16), transparent 32%),
-    linear-gradient(145deg, #070914, var(--bg) 52%, #17112b);
+  background: #f5efe6;
   overflow-x: hidden;
 }
 
