@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>月历清单</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="月历清单">
+  <meta name="theme-color" content="#c8a96e">
+  <link rel="stylesheet" href="style.css?v=mobile-calendar-visual-29">
+</head>
+<body>
+  <main class="planner-shell">
+    <section id="messageBox" class="planner-message" aria-live="polite"></section>
+    <section id="contentPanel" class="planner-stage"></section>
+  </main>
+  <div id="imagePreviewModal" class="image-preview-modal" aria-live="polite"></div>
+
+  <script src="main.js?v=mobile-calendar-list-32"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    }
+  </script>
+</body>
+</html>
