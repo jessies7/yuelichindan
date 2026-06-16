@@ -35,6 +35,7 @@
     }
     (function() {
       if (window.matchMedia('(display-mode: standalone)').matches) return;
+      if (localStorage.getItem('installDismissed')) return;
       var banner = document.getElementById('installBanner');
       var dismiss = document.getElementById('installDismiss');
       var installBtn = document.getElementById('installBtn');
@@ -44,14 +45,16 @@
         deferredPrompt = e;
         banner.style.display = 'flex';
       });
+      window.addEventListener('appinstalled', function() { banner.style.display = 'none'; localStorage.setItem('installDismissed', '1'); });
       setTimeout(function() { banner.style.display = 'flex'; }, 1200);
-      dismiss.addEventListener('click', function() { banner.style.display = 'none'; });
+      dismiss.addEventListener('click', function() { banner.style.display = 'none'; localStorage.setItem('installDismissed', '1'); });
       installBtn.addEventListener('click', function() {
         banner.style.display = 'none';
-        if (deferredPrompt) { deferredPrompt.prompt(); deferredPrompt = null; return; }
+        if (deferredPrompt) { deferredPrompt.prompt(); deferredPrompt.userChoice.then(function() { localStorage.setItem('installDismissed', '1'); }); return; }
         var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
         if (isIOS) { alert('请点底部分享按钮，然后选择"添加到主屏幕"'); }
         else { alert('请点浏览器菜单(右上角三个点)，然后选择"添加到主屏幕"或"安装应用"'); }
+        localStorage.setItem('installDismissed', '1');
       });
     })();
     (function() {
